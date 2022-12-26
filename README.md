@@ -20,7 +20,7 @@ The front-end, is created using EJS views, HTML, CSS and JavaScript.
 Our objective is to create a platform that allows anyone to share information through a big forum of questions and answers, and the ability to remain anonymous while browsing. The target audience of our application, includes, but is not limited to learners, software developers, students, and computer enthusiasts.
 
 The application is hosted on Render, a cloud platform that facilitates the deployment of web apps.\
-You can find the link to the application [here](https://stackunderflowusi.onrender.com/).
+You can find the link to the application [here](https://stack-underflow.onrender.com).
 
 
 ## Authors:
