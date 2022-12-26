@@ -1,0 +1,47 @@
+
+        <h1 class="trendingQ">Browse questions</h1>
+
+        <div class="maincontentdiv">
+
+            <% posts.forEach(post => { %>
+                <div class="d1">
+                    <a class="linkQ" href="/questions/<%- post.id %>">
+                        <div class="d">
+                            <div class="dtitle">
+                                <p class="styleT"><span class="styleT"> <%= post.title %> </span></p>
+                                <br>
+                                <p class="ptt"><span><%- post.bodyMarkdown %></span></p>
+                            </div>
+                            <div class="dscore">
+                                <p class="stylediv"><span> score: <%= post.score %> </span></p>
+                            </div>
+                            <div class="dcount">
+                                <p class="stylediv"><span> answers: <%= post.answerCount %> </span></p>
+                            </div>
+                            <div class="ddate">
+                                <p class="stylediv"><span><%= new Date(post.creationDate).toUTCString().split('G')[0] %></span></p>
+                            </div>
+                            <div class="dtag">
+                                <% post.tags.split("|").forEach(tag =>{ %>
+
+                                    <% if (tag != ''){%> 
+                                    <div class="styletag">
+                                        <span><%- tag %></span>
+                                    </div>   
+                                    <%}%> 
+                                <% }) %>
+                            </div>
+                            <div class="duser">
+                                <p><span>
+                                    <% if(post.ownerUserId ==0){%>
+                                        Anonymous
+                                    <% } else { %>
+                                        <%- users.find(e => e.id === post.ownerUserId).displayName %>
+                                    <%}%>
+                                </span></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            <% }); %>
+        </div>

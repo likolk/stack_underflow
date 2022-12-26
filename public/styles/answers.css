@@ -1,0 +1,34 @@
+.your-answer {
+    height: auto;
+    padding: 2%;
+}
+
+.add-another-answer {
+    font-size: 1.5em;
+    margin: auto;
+}
+
+.answer {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.textarea {
+    width: 100%;
+    height: 50vh;
+    margin: 2% auto 2% auto;
+    padding: 2%;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    resize: vertical;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.0em;
+}
+
+.submit-answer {
+    width: 100%;
+    font-size: 1.5em;
+    margin: auto;
+
+}

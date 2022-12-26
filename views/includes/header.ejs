@@ -1,0 +1,7 @@
+    <img class="header-logo" src="../images/logo.png" alt="logo">
+    <input class="searchbar" id="searchInput" type="text" placeholder="Search">
+    <% if (logged) { %>
+        <a class="header-logout" href="/users/logout"> Logout </a>
+    <% } else { %>
+        <a class="header-logout" href="/users"> Login </a>
+    <% } %>

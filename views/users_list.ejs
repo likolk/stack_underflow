@@ -1,0 +1,23 @@
+        <h1 class="trendingQ">List of users</h1>
+
+
+        <div class="user-content">
+
+            <% users.forEach(user => { %>
+                <div class="tags_cell">
+                        <a class="linkU" href="/users/<%- user.id %>">
+                            <div>
+                                <img class="img" src="<%= user.profileImageUrl %>" alt="user profile img">
+                                <p class="styleT" > <%= user.displayName %></p>
+                            </div>
+                            <div class = "right">
+                                <br>
+                                <p><span>number of questions: <%= user.questionCount %> </span></p>
+                                <p><span>number of answers: <%= user.answerCount %> </span></p>
+                                <p><span>reputation: <%= user.reputation %></span></p>
+                            </div>
+                        </a>
+                </div>
+            <% }); %>
+
+        </div>

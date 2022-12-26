@@ -1,0 +1,24 @@
+<div class="tags_filters">
+    <div class="tags_filter">
+        <p><a href="/tags/popular"> POPULAR </a></p>
+    </div>
+    <div class="tags_filter">
+        <p><a href="/tags/"> NEW </a></p>
+    </div>
+</div>
+<div class="tags_container">
+    <% let row=t=> { %>
+        <a href="/tags/<%-t.name%>">
+            <div class="tags_cell">
+                <div class="tags_name">
+                        <%-t.name%>
+                    
+                </div>
+                <div class="tags_count">
+                    <p> posted: <%-t.count%> times </p>
+                </div>
+            </div>
+        </a>
+        <%} %>
+            <%- tags.map(row).join("") %>
+</div>

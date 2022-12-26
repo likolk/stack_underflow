@@ -1,0 +1,19 @@
+
+        <h1 class="trendingQ">Tags questions</h1>
+
+        <div class="main-content">
+
+            <% posts.forEach(post => { %>
+
+                <div class="d1">
+                    <a class="linkQ" href="/questions/<%- post.id %>">
+                        <p><span class="styleT"> <%= post.title %> </span></p>
+                        <br>
+                        <p><span> <%= post.answerCount %> </span></p>
+                        <br>
+                        <p><span> <%= post.creationDate.split('G')[0] %> </span></p>
+                        <br>
+                    </a>
+                </div>
+            <% }); %>
+        </div>

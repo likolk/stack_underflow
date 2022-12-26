@@ -1,0 +1,32 @@
+services:
+ - type: web
+ - env: node
+   name: Stack Underflow
+   repo: https://github.com/GianinM/USI_StackUnderflow
+   branch: login_kelvin
+   healthCheckPath: /
+   port: 8000
+   version: 1.0
+   build: yarn add all
+   startCommand: npm start
+   domain: usi.stackunderflow.com
+   envVars: 
+    - key: MONGO_URI
+      fromDatabase: 
+      name: usi
+      property: connectionString
+
+
+
+ - type: redis
+   name: redis
+   version: 3.2
+
+database:
+  - name: usi
+  - version: 9.6
+  
+
+
+
+	

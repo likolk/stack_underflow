@@ -1,0 +1,38 @@
+# creating a service
+version: '3.9'
+
+services:
+  # mongodb service
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb_container
+    restart: always
+    # ports:
+    # connection string is: mongodb+srv://dbUser:eixl5MGj45wf4sOr@sunderflow.2gw57tz.mongodb.net/?retryWrites=true&w=majority
+      # - 27017:27017
+    volumes:
+      - mongodb:/data/db
+    
+  # nodejs service
+
+  nodejs:
+    build: .
+    ports:
+      - 8000:8000
+    volumes:
+      - .:/app
+    # environment variables
+    environment:
+      PORT: 8000
+      MONGO_URI: mongodb://mongodb+srv://dbUser:eixl5MGj45wf4sOr@sunderflow.2gw57tz.mongodb.net/?retryWrites=true&w=majority
+      DB_NAME: my_db
+      NAME: USISTACKUNDERFLOW
+      REDIS_URL: redis://redis:6379
+
+    depends_on:
+      - mongodb
+
+
+volumes:
+  mongodb: {}
+  

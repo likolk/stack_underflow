@@ -1,0 +1,67 @@
+
+        <h1 id="profile" class="trendingQ">User profile</h1>
+
+        <div class="main-content">
+
+            <div class="d1">
+                <br>
+                <p><span> <%= user.displayName %> </span></p>
+                <br>
+                <img src="<%= user.profileImageUrl %>" alt="user profile img">
+                <p><span>number of questions: <%= user.questionCount %> </span></p>
+                <p><span>number of answers: <%= user.answerCount %> </span></p>
+                <p><span>badges awards: gold = <%= user.goldBadges %> | silver =  <%= user.silverBadges %> | bronze = <%= user.bronzeBadges %></span></p>
+            </div>
+
+        </div>
+
+        <h1 id="questions" class="trendingQ">User questions</h1>
+
+        <div class="main-content">
+
+            <% questions.forEach(post => { %>
+                <% if(post.ownerUserId == user.id){%>
+                    <div class="d1">
+                        <a class="linkQ" href="/questions/<%- post.id %>">
+                            <p><span class="styleT"> <%= post.title %> </span></p>
+                            <br>
+                            <p><span> score: <%= post.score %> </span></p>
+                            <br>
+                            <p><span> answers: <%= post.answerCount %> </span></p>
+                            <br>
+                            <p><span> asked on: <%= new Date(post.creationDate).toUTCString().split('G')[0] %> </span></p>
+
+                            <br>
+                        </a>
+                    </div>
+                <%}%>
+            <% }); %>
+        </div>
+
+        <h1 id="answers" class="trendingQ">User answers</h1>
+
+        <div class="main-content">
+
+            <% user_answers.forEach(post => { %>
+                <div class="d1">
+                    <a class="linkQ" href="/questions/<%- post.parentId %>">
+                        <p><span class="styleT"> <%= questions.find(e=>e.id == post.parentId).title %> </span></p>
+                        <br>
+                        <p><span> score: <%= post.score %> </span></p>
+                        <br>
+                        <p><span> <%= new Date(post.creationDate).toUTCString().split('G')[0] %> </span></p>
+
+                        <br>
+                    </a>
+                </div>
+            <% }); %>
+        </div>
+    </main>
+    <!-- <aside style="border-right: 20px; position: -webkit-sticky; color: white; border: 2px solid white; height: 20%; width: auto; display: flex; flex-direction: column;">
+        <a style="color: white;" href="#profile">PROFILE</a>
+        <a style="color: white;" href="#questions">USER QUESTIONS</a>
+        <a style="color: white;" href="#answers">USER ANSWERS</a>
+    </aside> -->
+
+</div>
+

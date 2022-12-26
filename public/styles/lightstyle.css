@@ -1,0 +1,127 @@
+body {
+    background-color: #A1B0D8;
+    /* background-color: #121212; */
+}
+
+
+header {
+    /* color: #C5AE74; */
+    background-color: #A1B0D8;
+}
+
+nav {
+    border: #A353E6;
+    background-color: transparent;
+}
+
+nav a {
+    color: #A353E6;
+    border-color: #A353E6;
+}
+
+nav .newAsk {
+    background-color: #ff8800;
+}
+
+nav .newAsk .hc {
+    color: #000000;
+}
+
+nav a.active {
+    background-color: white;
+    color: #A1B0D8;
+}
+
+footer {
+    color: white;
+}
+
+main {
+    background-color: #5b6e74;
+}
+
+.nq {
+    background-color: #8cd5db;
+}
+
+aside {
+    border-color: #A353E6;
+    color: #A353E6;
+}
+
+a {
+    color: #A353E6
+}
+
+a:visited {
+    color: #A353E6
+}
+
+p {
+    color: white;
+}
+
+aside li {
+    color: #FFFF00;
+}
+
+.listofgames {
+    color: #FFFF00;
+}
+
+.button {
+    background-color: #8cd5db;
+}
+
+main.game_table header a {
+    color: #171B1D;
+}
+
+main.game_table header a:visited {
+    color: #171B1D
+}
+
+#answer {
+    background-color: #FFFFFF;
+}
+
+h3.question-title {
+    color: #FFFF00;
+}
+
+h1.trendingQ {
+    color: #FFFF00;
+}
+
+.d1 {
+    border-color: #FFFF00;
+}
+
+.question-content {
+    border-color: #FFFF00;
+}
+
+pre {
+    color: #000000;
+    background-color: #9e9e9d;
+}
+
+.user-details {
+    border-color: #FFFF00;
+}
+
+.question-tags > .tt {
+    border: #FFFF00;
+}
+
+.question-tags a{
+    color: #000000;
+}
+
+.answer-content {
+    border-color: #FFFF00;
+}
+
+.your-answer {
+    border-color: #FFFF00;
+}

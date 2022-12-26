@@ -1,0 +1,138 @@
+body {
+    /* background: linear-gradient(to right, #fc466b, #3f5efb); */
+    background-color: #2C0C3C;
+    /* background-color: #292929; */
+}
+
+header {
+    /* background: linear-gradient(to right, #fc466b, #3f5efb); */
+    /* background-color: #292929; */
+    background-color: #2C0C3C;
+}
+
+nav a {
+    /* background: linear-gradient(to right, #fc466b, #3f5efb); */
+    /* background-color: #6424CB; */
+    /* background-color: #03dac6; */
+    background-color: #cf6679;
+    color: #292929;
+    padding: 15%;
+    font-size: 1.5em;
+}
+
+nav a:hover {
+    box-shadow: -6px 6px 0 #5f5f5fc1;
+    transition: box-shadow 0.3s ease-in-out;
+    transform: translate(4px, -4px);
+    transition: 0.3s ease-in-out;
+}
+
+.newAsk {
+    background-color: #8cd5db;
+}
+
+footer {
+    color: white;
+}
+
+.nq {
+    background-color: #2C0C3C;
+    border: none;
+}
+
+/* a {
+    color: #292929;
+} */
+
+a:visited {
+    color: #292929
+}
+
+p {
+    color: white;
+}
+
+.ck p {
+    color: #000000c1;
+}
+
+.button {
+    background-color: #8cd5db;
+}
+
+#answer {
+    background-color: #FFFFFF;
+}
+
+.question-tags > .tt {
+    border: #FFFF00;
+}
+
+.user-details {
+    border-color: #FFFF00;
+}
+
+h3.question-title {
+    color: #FFFFFF;
+}
+
+h1.trendingQ {
+    color: #03dac6;
+}
+
+.d1 {
+    /* background-color: #C45C4B; */
+    background-color: #7b579e;
+}
+
+.d1:hover {
+    box-shadow: -8px 8px 0 #03ac9bc1;
+    transition: box-shadow 0.3s ease-in-out;
+    transform: translate(4px, -4px);
+    transition: 0.3s ease-in-out;
+}
+
+.tags_cell:hover {
+    box-shadow: -8px 8px 0 #03ac9bc1;
+    transition: box-shadow 0.3s ease-in-out;
+    transform: translate(4px, -4px);
+    transition: 0.3s ease-in-out;
+}
+
+.d2 {
+    /* background-color: #C45C4B; */
+    background-color: #7b579e;
+}
+
+.d2:hover {
+    box-shadow: -8px 8px 0 #03ac9bc1;
+    transition: box-shadow 0.3s ease-in-out;
+    transform: translate(4px, -4px);
+    transition: 0.3s ease-in-out;
+}
+
+.question-content {
+    background-color: #7b579e;
+}
+
+
+.answer-content {
+    border-color: #FFFF00;
+}
+
+.your-answer {
+    background-color: #7b579e;
+}
+
+a.header-logout {
+    background-color: #8cd5db;
+}
+
+a.header-logout:hover {
+    background-color: #8cd5db;
+    color: #121212;
+}
+
+.searchbar {
+    background-color: #FFFFFF;
+}

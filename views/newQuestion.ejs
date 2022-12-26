@@ -1,0 +1,36 @@
+<%- include ('includes/head') %>
+<div class="grid-container">
+
+    <section class="nq">
+        <div class="your-answer">
+            <div class="add-another-answer">
+                <h1 class="questionTitle"> New Question </h1>
+            </div>
+
+            
+            <form action="/questions/ask" method="post">
+
+                <div class="qt">
+                    <!-- <label class="ph" for="text">Question title:</label> -->
+                    <input class="t" id="text" type="text" name = "t" placeholder="Question Title" required/>
+                </div>
+
+                <div class="qt">
+                    <!-- <label class="ph" for="textarea">Enter a question:</label> -->
+                    <textarea class="q" id="editor" name = "q" cols="30" rows="20" placeholder="Write your question here"></textarea>
+                </div>
+
+                <div class="qt">
+                    <!-- <label class="ph" for="text" class="tag">Select the tag:</label> -->
+                    <input class="tags" id="text" type="text" name="tags" placeholder="tags">
+                </div>
+
+                <div class="qt">
+                    <input type="submit" class="submit">
+                </div>
+            </form>
+            </div>
+    </section>
+</div>
+
+
