@@ -6,7 +6,7 @@ This repository contains the project for Software Atelier 3 - The Web, a 3rd sem
 
 
 ## What is Stack Underflow:
-Stack Overflow is a web application that facilitates discussions regarding software development. Users have the chance to ask and at the same time, answer questions. Reciprocal sense is consequently a crucial element that separates people who use the program, enabling collaboration and knowledge-sharing.
+Stack Underflow is a web application that facilitates discussions regarding software development. Users have the chance to ask and at the same time, answer questions. Reciprocal sense is consequently a crucial element that separates people who use the program, enabling collaboration and knowledge-sharing.
 
 The application may provide anyone a large collection of questions and answers, with the option for each individual to register or remain anonymous. Authenticated users can vote for the best answers and so promote those they find informative or useful.
 
