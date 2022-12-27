@@ -1,7 +1,7 @@
 # Software Atelier 3 - The Web: Final Project
 
 
-## What this repo contains:
+## Repository content:
 This repository contains the project for Software Atelier 3 - The Web, a 3rd semester course of the Faculty of Informatics of Università della Svizzera Italiana, located in Lugano.
 
 
